@@ -1,0 +1,21 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 500px;
+    width: 400px;
+    background: cadetblue;
+}
+.kol{
+    display: flex;
+    text-decoration-style: none;
+    list-style-type: none;
+    width: 60px;
+    justify-content: space-around;
+}
+
