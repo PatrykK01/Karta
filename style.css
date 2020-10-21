@@ -3,7 +3,7 @@ body{
     height: 100vh;
     background: coral;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .card{
@@ -11,7 +11,7 @@ body{
     width: 400px;
     background: cadetblue;
     border-radius: 8px; 
-    box-shadow:  6px 4px rgba(59, 58, 58, 0.692);
+    box-shadow: 3px 3px rgba(59, 58, 58, 0.692);
 }
 .kol{
     display: flex;
@@ -30,7 +30,7 @@ img{
     width: 280px;
     border-radius: 8px;
     float: left;
-    box-shadow:  6px 4px rgba(59, 58, 58, 0.692);
+    box-shadow:  3px 3px rgba(59, 58, 58, 0.692);
 }
 .prawa{
     float: right;
@@ -59,4 +59,68 @@ button{
     height: 60px;
     background: crimson;
     color: white;
+}
+.liczenie{
+    height: 200px;
+    width: 200px;
+    background: aqua;
+}
+.card2{
+    height: 500px;
+    width: 400px;
+    background: lightcyan;
+    border-radius: 8px; 
+    box-shadow: 3px 3px rgba(59, 58, 58, 0.692);
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a"
+    "b"
+    "c";
+    transition: .5s;
+    transform: translate(5px,27.5px) rotate(-9deg);
+}
+.card2:hover{
+    transform: translate(10px,-10px);
+}
+header{
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+}
+main{
+    grid-area: b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+footer{
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+}
+.opis{
+    color: black;
+}
+@keyframes animacja{
+    0%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(5px,27.5px) rotate(-9deg);
+    }
+    50%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    75%{
+        transform: translate(-5px,-27.5px) rotate(9deg);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(0deg);;
+    }
 }

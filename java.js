@@ -23,4 +23,5 @@ function ob2(){
  }
  function ob4(){
     document.getElementById("obrazek").innerHTML = "<img src='https://www.sadsandomierski.pl/images/zielone-jab%C5%82ko.png'></img>"
- }
+ };
+
