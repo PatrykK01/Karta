@@ -35,8 +35,8 @@ img{
 .prawa{
     float: right;
     position: relative;
-    top: -350px;
-    left: -50px;
+    top: -390px;
+    left: -20px;
 }
 h1{
     color: red;    
@@ -68,7 +68,7 @@ button{
 .card2{
     height: 500px;
     width: 400px;
-    background: lightcyan;
+    background-image: url(https://www.kalendarzrolnikow.pl/upload/image/letnieowoceart.jpg);
     border-radius: 8px; 
     box-shadow: 3px 3px rgba(59, 58, 58, 0.692);
     display: grid;
@@ -78,10 +78,11 @@ button{
     "b"
     "c";
     transition: .5s;
-    transform: translate(5px,27.5px) rotate(-9deg);
+    transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
 }
 .card2:hover{
-    transform: translate(10px,-10px);
+    transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    box-shadow: 3px 3px rgba(59, 58, 58, 0.692);
 }
 header{
     grid-area: a;
@@ -105,22 +106,33 @@ footer{
     background: lightgray;
 }
 .opis{
-    color: black;
+    color: white;
+}
+.bot{
+    display: flex;
+    flex-wrap:wrap;
+}
+input{
+    width: 30px;
+    height: 10px;
 }
 @keyframes animacja{
     0%{
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
     25%{
-        transform: translate(5px,27.5px) rotate(-9deg);
+        transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
     }
     50%{
-        transform: translate(0px,0px) rotate(0deg);
+        transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
     75%{
-        transform: translate(-5px,-27.5px) rotate(9deg);
+        transform: perspective(-3em) rotateX(0deg) rotateY(1.175deg) rotateZ(1deg);
     }
     100%{
-        transform: translate(0px,0px) rotate(0deg);;
+        transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
+}
+span{
+    color: white;
 }

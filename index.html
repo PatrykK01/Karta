@@ -11,7 +11,7 @@
         <div class="photo"  id="obrazek"><img src="https://image.ceneostatic.pl/data/products/85220052/i-jablko-czerwone.jpg"></div>
         <div class="prawa">
             <div class="name"><h2>Jabłko</h2></div>
-            <div class="cost"><h1>7.93$</h1></div>
+            <div class="cost" ><h1 id="cena" value="7.93">7.93</h1>$</div>
             <div class="sel"><h3>SELECT A COLOR</h3>
                 <ul class="kol">
                     <li> <a href="###" id="jab1" onclick="ob1()"><img src="https://image.ceneostatic.pl/data/products/85220053/i-jablko-zielone.jpg" alt="1" class="rodz"> </a></li>
@@ -27,7 +27,12 @@
                     <li>4</li>
                 </ul>
                 </div>
-                <button onclick="zmiana()">Kup</button>
+                <div class="bot">
+                <input type="text" id="ilosc" value="">
+                Wydasz:<span id="wynik">...</span>
+            </div>
+                <button id="guzik">Kup</button>
+
         </div>
     </div>
     </div>
@@ -37,7 +42,7 @@
         </header>
         <main>
             <h2 class="opis"><b><i>Banan, Jabłko</i></b></h2>
-            <h1>5$</h1>
+            <h1>5$</h1  >
         </main>
         <footer>
             <button>Kup</button>

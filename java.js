@@ -25,3 +25,20 @@ function ob2(){
     document.getElementById("obrazek").innerHTML = "<img src='https://www.sadsandomierski.pl/images/zielone-jab%C5%82ko.png'></img>"
  };
 
+const cos={
+ ilosc : document.getElementById("ilosc"),
+ cena : document.getElementById("cena"),
+ wynik : document.getElementById("wynik"),
+ guzik : document.getElementById("guzik"),
+ 
+licz:function(){
+   this.wynik.innerHTML= parseFloat(this.ilosc.value*this.cena.innerHTML);
+   console.log(this.wynik)
+},
+
+btn1:function(){
+    this.guzik.addEventListener('click',this.licz.bind(cos));
+},
+
+}
+cos.btn1();
