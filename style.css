@@ -51,7 +51,7 @@ h2{
     height: 40px;
     width: 40px;
 }
-img:hover{
+.rodz:hover{
     border: solid 1px red;
 }
 button{
